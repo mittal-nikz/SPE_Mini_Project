@@ -7,7 +7,6 @@
         name: mittalnikz/mini_project
         state: absent
         force: yes
-    - name: Pull image
+    - name: Pull new image
       docker_image:
         name: mittalnikz/mini_project
-        
