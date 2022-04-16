@@ -2,11 +2,7 @@
 - name: Pull docker image of Calculator
   hosts: all
   tasks:
-    - name: Remove image
+    - name: Pull image
       docker_image:
         name: mittalnikz/mini_project
-        state: absent
-        force: yes
-    - name: Pull new image
-      docker_image:
-        name: mittalnikz/mini_project
+        source: pull
