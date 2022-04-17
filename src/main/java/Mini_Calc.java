@@ -15,12 +15,21 @@ public class Mini_Calc {
         Scanner scanner = new Scanner(System.in);
         double n1, n2;
         do {
-            System.out.println("Calculator-DevOps, Choose to perform operation");
-            System.out.println("1) Factorial");
-            System.out.println("2) Square-Root");
-            System.out.println("3) Power");
-            System.out.println("4) Natural Logarithm");
-            System.out.println("5) Exit");
+            System.out.println("Calculator-DevOps");
+            System.out.println("");
+            System.out.println("BASIC");
+            System.out.println("1) Addition");
+            System.out.println("2) Subtraction");
+            System.out.println("3) Multiplication");
+            System.out.println("4) Division");
+            System.out.println("5) Modulus");
+            System.out.println("");
+            System.out.println("SCIENTIFIC");
+            System.out.println("6) Factorial");
+            System.out.println("7) Square-Root");
+            System.out.println("8) Power");
+            System.out.println("9) Natural Logarithm");
+            System.out.println("10) Exit");
             System.out.print("Enter your choice: ");
             int ch;
             try {
@@ -31,6 +40,56 @@ public class Mini_Calc {
 
             switch (ch) {
                 case 1:
+                    System.out.print("ADDITION ");
+                    System.out.print("Enter the first number : ");
+                    n1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    n2 = scanner.nextDouble();
+                    System.out.println("Addition of "+n1+" and "+n2+" is " +(n1+n2));
+                    System.out.println("\n");
+                    break;
+
+                case 2:
+                    System.out.print("SUBTRACTION ");
+                    System.out.print("Enter the first number : ");
+                    n1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    n2 = scanner.nextDouble();
+                    System.out.println("Subtraction of "+n1+" and "+n2+" is " +(n1-n2));
+                    System.out.println("\n");
+                    break;
+
+                case 3:
+                    System.out.print("MULTIPLICATION ");
+                    System.out.print("Enter the first number : ");
+                    n1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    n2 = scanner.nextDouble();
+                    System.out.println("Multiplication of "+n1+" and "+n2+" is " +(n1*n2));
+                    System.out.println("\n");
+                    break;
+
+                case 4:
+                    System.out.print("DIVISION ");
+                    System.out.print("Enter the first number : ");
+                    n1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    n2 = scanner.nextDouble();
+                    System.out.println("Division of "+n1+" and "+n2+" is " +(n1/n2));
+                    System.out.println("\n");
+                    break;
+
+                case 5:
+                    System.out.print("MODULUS ");
+                    System.out.print("Enter the first number : ");
+                    n1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    n2 = scanner.nextDouble();
+                    System.out.println("Modulus of "+n1+" and "+n2+" is " +(n1%n2));
+                    System.out.println("\n");
+                    break;
+
+                case 6:
                     System.out.print("FACTORIAL ");
                     System.out.print("Enter a number : ");
                     n1 = scanner.nextDouble();
@@ -38,7 +97,7 @@ public class Mini_Calc {
                     System.out.println("\n");
 
                     break;
-                case 2:
+                case 7:
                     System.out.print("SQUARE ROOT ");
                     System.out.print("Enter a number : ");
                     n1 = scanner.nextDouble();
@@ -47,7 +106,7 @@ public class Mini_Calc {
 
 
                     break;
-                case 3:
+                case 8:
                     System.out.print("POWER ");
                     System.out.print("Enter the first number : ");
                     n1 = scanner.nextDouble();
@@ -56,7 +115,7 @@ public class Mini_Calc {
                     System.out.println(n1+ " raised to power "+n2+" is : " + mini.power(n1, n2));
                     System.out.println("\n");
                     break;
-                case 4:
+                case 9:
                     System.out.print("NATURAL LOG ");
                     System.out.print("Enter a number : ");
                     n1 = scanner.nextDouble();
