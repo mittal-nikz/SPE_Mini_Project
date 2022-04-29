@@ -15,7 +15,7 @@ public class Mini_Calc {
         Scanner scanner = new Scanner(System.in);
         double n1, n2;
         do {
-            System.out.println("Calculator-DevOps");
+            System.out.println("Calculator--DevOps");
             System.out.println("");
             System.out.println("BASIC");
             System.out.println("1) Addition");
